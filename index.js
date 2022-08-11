@@ -71,9 +71,9 @@
 // console.log(totalOil);
 // close Problem-3  remove call /////
 
-/                                             //////Problem-4/////
+                                          ////Problem-4/////
 
-let peopleNumber = 235;
+let peopleNumber = 365;
 
 function publicBusFare(peopleNumber){
     let publicBusPercost = 250;
@@ -82,7 +82,6 @@ function publicBusFare(peopleNumber){
 
     if(typeof peopleNumber == 'number'){
     let busRemain = peopleNumber % busCapacity;
-    
     // rest people from bus//
     let microRemain = busRemain%microCapacity;
     let publicBuscost = microRemain*publicBusPercost;
