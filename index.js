@@ -72,6 +72,7 @@
 // close Problem-3  remove call /////
 
 /                                             //////Problem-4/////
+console.log(35%50);
 let peopleNumber = 235;
 
 function publicBusFare(peopleNumber){
@@ -79,23 +80,22 @@ function publicBusFare(peopleNumber){
     let busCapacity = 50;
     let microCapacity = 11;
 
+    if(typeof peopleNumber == 'number'){
     let busRemain = peopleNumber % busCapacity;
+    console.log(busRemain);
     // rest people from bus//
-
     let microRemain = busRemain%microCapacity;
     let publicBuscost = microRemain*publicBusPercost;
-    //////Public bus total cost 
-
-if(typeof peopleNumber !=  'number'){
-    console.log('Valid! Please,  Enter a Number.')
+    return publicBuscost;
+    }
+    // for Invalid Number////
+else{
+    return 'Valid! Please,  Enter a Number.';
 }
-// for Invalid Number////
-
-  
-return publicBuscost;
 }
 let totalPeople = publicBusFare(peopleNumber);
 console.log(totalPeople);
+
 //// Problem-4 close////
 
 
