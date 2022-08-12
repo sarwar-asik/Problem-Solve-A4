@@ -11,7 +11,7 @@
                             return 'Valid !  Please Enter a Number';
                         }
                         }
-                        const radian  = radianToDegree(199);
+                      
                                     //  Completed problem-1  /////
                         
                         
@@ -32,6 +32,7 @@
                                 return 'Invalid! Please Provide a String';
                             }
                         }
+                    
                                         /////// Complete  Problem-2 ////
                         
                         
@@ -88,10 +89,10 @@
                         
                         function  isBestFriend(myself,abir){
                             //// for bestFriend check ///
-                           const myNames = myself.name1;
-                           const abirNames = abir.name2;
-                        const myFriend = myself.friend1;
-                        const abirFriend = abir.friend2;
+                           const myNames = myself.name1;       /////name1 is a property of myself object//////
+                           const abirNames = abir.name2;      //////name2 is prperty of abir object ///
+                        const myFriend = myself.friend1;      //////friend1 is prop. of myself///////
+                        const abirFriend = abir.friend2;      ///// it is a property of abir object//////
                         
                         // for valid vaiable //////
                         const myselfType = typeof myself;
