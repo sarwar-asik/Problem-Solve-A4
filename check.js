@@ -89,10 +89,14 @@
                         
                         function  isBestFriend(myself,abir){
                             //// for bestFriend check ///
-                           const myNames = myself.name1;       /////name1 is a property of myself object//////
-                           const abirNames = abir.name2;      //////name2 is prperty of abir object ///
-                        const myFriend = myself.friend1;      //////friend1 is prop. of myself///////
-                        const abirFriend = abir.friend2;      ///// it is a property of abir object//////
+                           const myNames = myself.name1;    
+                              /////name1 is a property of myself object//////
+                           const abirNames = abir.name2; 
+                                ////name2 is prperty of abir object ///
+                        const myFriend = myself.friend1;   
+                           ////friend1 is prop. of myself///////
+                        const abirFriend = abir.friend2;      
+                        /// it is a property of abir object//////
                         
                         // for valid vaiable //////
                         const myselfType = typeof myself;
