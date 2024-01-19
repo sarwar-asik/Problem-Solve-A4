@@ -44,7 +44,6 @@ function checkType(para1) {
     console.log("it is a negative number");
   }
 }
-
 checkType(-18);
 
 
