@@ -104,10 +104,34 @@ const products = [
   // Add more products as needed
 ];
 
-products.reduce((acc,current)=>{
-  
-},0)
+const totalValue = products.reduce((acc, current) => {
+  return acc + current.price * current.quantity;
+}, 0);
 
-
+console.log(totalValue);
 // !Problem-: Array Intersection
 // Write a function that takes two arrays and returns a new array containing only the elements that appear in both arrays.
+function findCommonElements(array1, array2) {
+  const newArray = [...array1, ...array2];
+
+  // return newArray;
+  const commonArray = newArray.reduce((acc, current) => {
+    if (
+      !acc.includes(current) &&
+      array1.includes(current) &&
+      array2.includes(current)
+    ) {
+      acc.push(current);
+    }
+    return acc;
+  }, []);
+
+  return commonArray;
+}
+
+// Example usage:
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [3, 4, 5, 6, 7];
+
+const commonElements = findCommonElements(array1, array2);
+console.log("Common Elements:", commonElements);
