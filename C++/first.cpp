@@ -1,38 +1,45 @@
-#include  <iostream>
-using namespace std ;
+#include <iostream>
+using namespace std;
 
-int main (){
+int main()
+{
 
-cout << "sarwar hossain \n asik \n" << 3 << endl;
+    cout << "sarwar hossain \n asik \n"
+         << 3 << endl;
 
-cout << 1234 << endl; ///coment
+    cout << 1234 << endl; /// coment
 
-cout << "Types" << endl;
+    cout << "Types" << endl;
 
-int myNum = 10;
+    int myNum = 10;
 
-cout << 'number' <<  myNum;
+    cout << 'number' << myNum;
 
-char MyLetter = 'text type';
+    char MyLetter = 'text type';
 
-cout << MyLetter;
+    cout << MyLetter;
 
+    string myString = "my string";
 
-string myString ="my string";
+    cout << myString;
 
-cout << myString;
+    int x = 5;
+    int y = 10;
+    int sum = x + y;
 
-int x= 5 ;
-int y = 10 ;
-int sum = x +y ;
+    cout << sum;
 
-cout << sum;
+    bool isType = true;
 
-bool isType = true;
+    cout << isType;
 
-cout << isType;
+    int i = 0;
+    while (i < 7)
+    {
 
+        cout << i << "\n";
+        i++;
+    }
 
-return 5;
-
+    return 5;
 }
